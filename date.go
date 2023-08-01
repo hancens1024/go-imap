@@ -14,7 +14,7 @@ import (
 // GMail doesn't support leading spaces in dates used in SEARCH commands.
 const (
 	// Defined in RFC 3501 as date-text on page 83.
-	DateLayout = "_2-Jan-2006"
+	DateLayout = "_2-Jan-2006 15:04:05 -0700"
 	// Defined in RFC 3501 as date-time on page 83.
 	DateTimeLayout = "_2-Jan-2006 15:04:05 -0700"
 	// Defined in RFC 5322 section 3.3, mentioned as env-date in RFC 3501 page 84.
