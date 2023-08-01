@@ -122,7 +122,7 @@ func (c *SearchCriteria) parseField(fields []interface{}, charsetReader func(io.
 	case "BEFORE":
 		if f, fields, err = popSearchField(fields); err != nil {
 			return nil, err
-		} else if t, err := time.Parse(DateLayout, maybeString(f)); err != nil {
+		} else if t, err := time.Parse(DateTimeLayout, maybeString(f)); err != nil {
 			return nil, err
 		} else if c.Before.IsZero() || t.Before(c.Before) {
 			c.Before = t
@@ -190,7 +190,7 @@ func (c *SearchCriteria) parseField(fields []interface{}, charsetReader func(io.
 	case "SENTBEFORE":
 		if f, fields, err = popSearchField(fields); err != nil {
 			return nil, err
-		} else if t, err := time.Parse(DateLayout, maybeString(f)); err != nil {
+		} else if t, err := time.Parse(DateTimeLayout, maybeString(f)); err != nil {
 			return nil, err
 		} else if c.SentBefore.IsZero() || t.Before(c.SentBefore) {
 			c.SentBefore = t
@@ -207,7 +207,7 @@ func (c *SearchCriteria) parseField(fields []interface{}, charsetReader func(io.
 	case "SENTSINCE":
 		if f, fields, err = popSearchField(fields); err != nil {
 			return nil, err
-		} else if t, err := time.Parse(DateLayout, maybeString(f)); err != nil {
+		} else if t, err := time.Parse(DateTimeLayout, maybeString(f)); err != nil {
 			return nil, err
 		} else if c.SentSince.IsZero() || t.After(c.SentSince) {
 			c.SentSince = t
@@ -215,7 +215,7 @@ func (c *SearchCriteria) parseField(fields []interface{}, charsetReader func(io.
 	case "SINCE":
 		if f, fields, err = popSearchField(fields); err != nil {
 			return nil, err
-		} else if t, err := time.Parse(DateLayout, maybeString(f)); err != nil {
+		} else if t, err := time.Parse(DateTimeLayout, maybeString(f)); err != nil {
 			return nil, err
 		} else if c.Since.IsZero() || t.After(c.Since) {
 			c.Since = t
