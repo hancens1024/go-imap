@@ -4,9 +4,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/emersion/go-imap"
-	"github.com/emersion/go-imap/commands"
-	"github.com/emersion/go-imap/responses"
+	"github.com/hancens1024/go-imap"
+	"github.com/hancens1024/go-imap/commands"
+	"github.com/hancens1024/go-imap/responses"
 )
 
 // ErrNotLoggedIn is returned if a function that requires the client to be

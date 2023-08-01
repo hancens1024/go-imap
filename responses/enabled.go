@@ -1,7 +1,7 @@
 package responses
 
 import (
-	"github.com/emersion/go-imap"
+	"github.com/hancens1024/go-imap"
 )
 
 // An ENABLED response, defined in RFC 5161 section 3.2.

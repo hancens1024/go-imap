@@ -6,8 +6,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/emersion/go-imap"
-	"github.com/emersion/go-imap/internal"
+	"github.com/hancens1024/go-imap"
+	"github.com/hancens1024/go-imap/internal"
 )
 
 func TestCanonicalMailboxName(t *testing.T) {

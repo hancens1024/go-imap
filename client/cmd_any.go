@@ -3,8 +3,8 @@ package client
 import (
 	"errors"
 
-	"github.com/emersion/go-imap"
-	"github.com/emersion/go-imap/commands"
+	"github.com/hancens1024/go-imap"
+	"github.com/hancens1024/go-imap/commands"
 )
 
 // ErrAlreadyLoggedOut is returned if Logout is called when the client is
