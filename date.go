@@ -20,7 +20,7 @@ const (
 	// Defined in RFC 5322 section 3.3, mentioned as env-date in RFC 3501 page 84.
 	envelopeDateTimeLayout = "Mon, 02 Jan 2006 15:04:05 -0700"
 	// Use as an example in RFC 3501 page 54.
-	searchDateLayout = "2-Jan-2006"
+	searchDateLayout = "2-Jan-2006 15:04:05 -0700"
 )
 
 // time.Time with a specific layout.
